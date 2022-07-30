@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GradeAverage/GradeAverage.iml" filepath="$PROJECT_DIR$/GradeAverage/GradeAverage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HypotenuseTriangle/HypotenuseTriangle.iml" filepath="$PROJECT_DIR$/HypotenuseTriangle/HypotenuseTriangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KDVamount/KDVamount.iml" filepath="$PROJECT_DIR$/KDVamount/KDVamount.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/patikaJAVA101.iml" filepath="$PROJECT_DIR$/.idea/patikaJAVA101.iml" />
+    </modules>
+  </component>
+</project>
