@@ -1,36 +1,42 @@
 import java.util.Scanner;
 
-
 public class main {
-    public  static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter first number: ");
-        int n1 = scanner.nextInt();
-        System.out.println("Enter second number");
-        int n2 = scanner.nextInt();
+        System.out.print("Enter first number: ");
+        double n1 = scanner.nextDouble();
+        System.out.print("Enter second number: ");
+        double n2 = scanner.nextDouble();
 
-        System.out.println("1-Sum, 2-Subtraction, 3-Multiplication, 4-Division");
-        System.out.println("Chose one: ");
+        System.out.println("1-Addition, 2-Subtraction, 3-Multiplication, 4-Division");
+        System.out.print("Choose an operation (1/2/3/4): ");
         int select = scanner.nextInt();
 
-        switch (select)
-        {
+        double result;
+
+        switch (select) {
             case 1:
-                System.out.println("Sum: " + (n1+n2));
+                result = n1 + n2;
+                System.out.println("Sum: " + result);
                 break;
-
             case 2:
-                System.out.println("Sum: " + (n1-n2));
+                result = n1 - n2;
+                System.out.println("Difference: " + result);
                 break;
-
             case 3:
-                System.out.println("Sum: " + (n1*n2));
+                result = n1 * n2;
+                System.out.println("Product: " + result);
                 break;
-
             case 4:
-                System.out.println("Sum: " + (n1/n2));
+                if (n2 != 0) {
+                    result = n1 / n2;
+                    System.out.println("Quotient: " + result);
+                } else {
+                    System.out.println("Division by zero is not allowed.");
+                }
                 break;
+            default:
+                System.out.println("Invalid selection.");
         }
     }
 }
